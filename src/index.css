@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+	height: 100vh;
+  background-image: url("/wp-1.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#root {
+	height: inherit;
+}
