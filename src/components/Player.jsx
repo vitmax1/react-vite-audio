@@ -64,13 +64,13 @@ export default function Player({ tracks }) {
         setIsPlaying(false);
     };
 
-    // const handleStop = () => {
-    //     if (!audioRef.current) return;
-    //     audioRef.current.pause();
-    //     audioRef.current.currentTime = 0;
-    //     setIsPlaying(false);
-    //     setCurrentTime(0);
-    // };
+    const handleStop = () => {
+        if (!audioRef.current) return;
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+        setIsPlaying(false);
+        setCurrentTime(0);
+    };
 
     const handleNext = () => {
         setCurrentIndex((prev) => (prev + 1) % tracks.length);
