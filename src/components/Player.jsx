@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { PlayIcon, PauseIcon, NextIcon, PrevIcon, StopIcon, ShuffleIcon } from "./Icons";
+import { PlayIcon, PauseIcon, NextIcon, PrevIcon, ShuffleIcon } from "./Icons";
 
 export default function Player({ tracks }) {
     const audioRef = useRef(null);
@@ -64,13 +64,13 @@ export default function Player({ tracks }) {
         setIsPlaying(false);
     };
 
-    const handleStop = () => {
-        if (!audioRef.current) return;
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-        setIsPlaying(false);
-        setCurrentTime(0);
-    };
+    // const handleStop = () => {
+    //     if (!audioRef.current) return;
+    //     audioRef.current.pause();
+    //     audioRef.current.currentTime = 0;
+    //     setIsPlaying(false);
+    //     setCurrentTime(0);
+    // };
 
     const handleNext = () => {
         setCurrentIndex((prev) => (prev + 1) % tracks.length);
@@ -184,9 +184,9 @@ export default function Player({ tracks }) {
                     </button>
                 )}
 
-                <button className="px-3 py-2 rounded-lg" onClick={handleStop}>
+                {/* <button className="px-3 py-2 rounded-lg" onClick={handleStop}>
                     <StopIcon className="cursor-pointer" />
-                </button>
+                </button> */}
 
                 <button className="px-3 py-2 rounded-lg" onClick={handleNext}>
                     <NextIcon className="cursor-pointer" />
