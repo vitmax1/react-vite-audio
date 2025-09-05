@@ -7,7 +7,7 @@ function App() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch("http://localhost:5000/api/folders");
+                const res = await fetch("/api/folders");
                 const data = await res.json();
                 
                 setTracks(data);
