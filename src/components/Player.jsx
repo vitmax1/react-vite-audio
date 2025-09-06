@@ -137,7 +137,7 @@ export default function Player({ tracks }) {
     };
 
     return (
-        <div className="flex flex-col items-center space-y-4 p-4 bg-gray-100 rounded-2xl shadow-md w-full mx-auto">
+        <div className="flex flex-col items-center space-y-4 p-4 bg-gray-100 rounded-lg shadow-md w-full mx-auto">
             <h2 className="text-lg font-bold">
                 {currentTrack?.name
                     ? `${
@@ -164,16 +164,16 @@ export default function Player({ tracks }) {
 
             {/* Панель управления */}
             <div className="flex space-x-3">
-                <button className="p-2 rounded-lg" onClick={handlePrev}>
+                <button className="p-2" onClick={handlePrev}>
                     <PrevIcon className="cursor-pointer" />
                 </button>
 
                 {isPlaying ? (
-                    <button className="p-2 rounded-lg" onClick={handlePause}>
+                    <button className="p-2" onClick={handlePause}>
                         <PauseIcon className="cursor-pointer" />
                     </button>
                 ) : (
-                    <button className="p-2 rounded-lg" onClick={handlePlay}>
+                    <button className="p-2" onClick={handlePlay}>
                         <PlayIcon className="cursor-pointer" />
                     </button>
                 )}
@@ -182,11 +182,11 @@ export default function Player({ tracks }) {
                     <StopIcon className="cursor-pointer" />
                 </button> */}
 
-                <button className="p-2 rounded-lg" onClick={handleNext}>
+                <button className="p-2" onClick={handleNext}>
                     <NextIcon className="cursor-pointer" />
                 </button>
 
-                <button className="p-2 rounded-lg" onClick={handleRandom}>
+                <button className="p-2" onClick={handleRandom}>
                     <ShuffleIcon className="cursor-pointer" />
                 </button>
             </div>
@@ -208,7 +208,7 @@ export default function Player({ tracks }) {
 
             {/* Плейлист */}
             <div className="w-full md:w-auto">
-                <ul className="w-full mt-4 bg-white rounded-xl shadow-inner divide-y divide-gray-200">
+                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
