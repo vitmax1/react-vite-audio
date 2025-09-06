@@ -169,17 +169,11 @@ export default function Player({ tracks }) {
                 </button>
 
                 {isPlaying ? (
-                    <button
-                        className="p-2 rounded-lg"
-                        onClick={handlePause}
-                    >
+                    <button className="p-2 rounded-lg" onClick={handlePause}>
                         <PauseIcon className="cursor-pointer" />
                     </button>
                 ) : (
-                    <button
-                        className="p-2 rounded-lg"
-                        onClick={handlePlay}
-                    >
+                    <button className="p-2 rounded-lg" onClick={handlePlay}>
                         <PlayIcon className="cursor-pointer" />
                     </button>
                 )}
@@ -218,21 +212,21 @@ export default function Player({ tracks }) {
                     {tracks.map((track, index) => (
                         <li
                             key={index}
-                            className={`px-3 py-1 whitespace-pre-wrap break-normal cursor-pointer hover:bg-gray-100 ${
+                            className={`px-3 py-1 flex space-between cursor-pointer hover:bg-gray-100 ${
                                 index === currentIndex ? "bg-blue-100" : ""
                             }`}
                             onClick={() => handleSelectTrack(index)}
                         >
                             <span
-                                className={`text-gray-500 ${
+                                className={`text-gray-500 block ${
                                     index === currentIndex
                                         ? "font-semibold"
                                         : ""
                                 }`}
                             >
-                                {track.folderName || "Без папки"} -
+                                {track.folderName || "Без папки"}
                             </span>{" "}
-                            {getFormattedName(track.name)}
+                            <span className="string">{getFormattedName(track.name)}</span>
                         </li>
                     ))}
                 </ul>
