@@ -213,28 +213,30 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Плейлист */}
-           <div className="">
-						 <ul className="w-full mt-4 bg-white rounded-xl shadow-inner divide-y divide-gray-200">
-                {tracks.map((track, index) => (
-                    <li
-                        key={index}
-                        className={`px-3 py-1 whitespace-normal cursor-pointer hover:bg-gray-100 ${
-                            index === currentIndex ? "bg-blue-100" : ""
-                        }`}
-                        onClick={() => handleSelectTrack(index)}
-                    >
-                        <span
-                            className={`text-gray-500 ${
-                                index === currentIndex ? "font-semibold" : ""
+            <div className="">
+                <ul className="w-full mt-4 bg-white rounded-xl shadow-inner divide-y divide-gray-200">
+                    {tracks.map((track, index) => (
+                        <li
+                            key={index}
+                            className={`px-3 py-1 whitespace-pre-wrap break-normal cursor-pointer hover:bg-gray-100 ${
+                                index === currentIndex ? "bg-blue-100" : ""
                             }`}
+                            onClick={() => handleSelectTrack(index)}
                         >
-                            {track.folderName || "Без папки"} -
-                        </span>{" "}
-                        {getFormattedName(track.name)}
-                    </li>
-                ))}
-            </ul>
-					 </div>
+                            <span
+                                className={`text-gray-500 ${
+                                    index === currentIndex
+                                        ? "font-semibold"
+                                        : ""
+                                }`}
+                            >
+                                {track.folderName || "Без папки"} -
+                            </span>{" "}
+                            {getFormattedName(track.name)}
+                        </li>
+                    ))}
+                </ul>
+            </div>
         </div>
     );
 }
