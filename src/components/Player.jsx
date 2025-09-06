@@ -226,7 +226,7 @@ export default function Player({ tracks }) {
                             >
                                 {track.folderName || "Без папки"}
                             </span>{" "}
-                            <span className="break-words whitespace-normal">
+                            <span className="truncate">
                                 {getFormattedName(track.name)}
                             </span>
                         </li>
