@@ -212,7 +212,7 @@ export default function Player({ tracks }) {
                     {tracks.map((track, index) => (
                         <li
                             key={index}
-                            className={`px-3 py-1 flex space-between cursor-pointer hover:bg-gray-100 ${
+                            className={`px-3 py-1 flex space-between gap-1 cursor-pointer hover:bg-gray-100 ${
                                 index === currentIndex ? "bg-blue-100" : ""
                             }`}
                             onClick={() => handleSelectTrack(index)}
