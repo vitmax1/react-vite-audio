@@ -163,6 +163,6 @@ if (fs.existsSync(distPath)) {
     console.log("⚠️ dist не найден, фронт не будет отдаваться");
 }
 
-app.listen(PORT, () => {
-    console.log(`✅ Сервер запущен: http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`✅ Сервер запущен на порту ${PORT}`);
 });
