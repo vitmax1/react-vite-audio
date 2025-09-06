@@ -164,35 +164,35 @@ export default function Player({ tracks }) {
 
             {/* Панель управления */}
             <div className="flex space-x-3">
-                <button className="px-3 py-2 rounded-lg" onClick={handlePrev}>
+                <button className="p-2 rounded-lg" onClick={handlePrev}>
                     <PrevIcon className="cursor-pointer" />
                 </button>
 
                 {isPlaying ? (
                     <button
-                        className="px-3 py-2 rounded-lg"
+                        className="p-2 rounded-lg"
                         onClick={handlePause}
                     >
                         <PauseIcon className="cursor-pointer" />
                     </button>
                 ) : (
                     <button
-                        className="px-3 py-2 rounded-lg"
+                        className="p-2 rounded-lg"
                         onClick={handlePlay}
                     >
                         <PlayIcon className="cursor-pointer" />
                     </button>
                 )}
 
-                {/* <button className="px-3 py-2 rounded-lg" onClick={handleStop}>
+                {/* <button className="p-2 rounded-lg" onClick={handleStop}>
                     <StopIcon className="cursor-pointer" />
                 </button> */}
 
-                <button className="px-3 py-2 rounded-lg" onClick={handleNext}>
+                <button className="p-2 rounded-lg" onClick={handleNext}>
                     <NextIcon className="cursor-pointer" />
                 </button>
 
-                <button className="px-3 py-2 rounded-lg" onClick={handleRandom}>
+                <button className="p-2 rounded-lg" onClick={handleRandom}>
                     <ShuffleIcon className="cursor-pointer" />
                 </button>
             </div>

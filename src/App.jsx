@@ -27,7 +27,7 @@ function App() {
         >
             <div className="absolute inset-0 bg-black opacity-55"></div>
             <div className="flex justify-center items-center h-screen">
-                <div className="p-4 z-999">
+                <div className="p-1 z-999 md:p-4 max-w-100">
                     {/* <h1 className="text-3xl font-bold mb-6 text-center">
                     🎶 Слушай RAP
                 </h1> */}
