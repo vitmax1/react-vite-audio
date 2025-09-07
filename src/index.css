@@ -9,27 +9,20 @@ body {
 	overflow: hidden;
 }
 .metal {
-  box-shadow: 
-    inset 0 0 0 1px #c7aca0,
-    inset 0 1px 2px rgba(255, 255, 255, 0.5),
-    inset 0 -1px 2px rgba(0, 0, 0, 0.5);
-
-  background:
-    conic-gradient(
-      #e6c9bf, #d2b5aa, #cbaea3, #d4b5ab,
-      #e5c3bd, #d9c0b4, #d9bcb1, #c5a399,
-      #e3c6bc, #e7cac0, #dec0b5, #d3b6ab,
-      #cfada1, #d4b6ac, #e2c6c0, #e2c6c0,
-      #d2b1a6, #d2b1a6, #d1b4a9, #e1c4ba,
-      #e5c9be, #dec1b6, #d3b6ab, #ceb0a6,
-      #cfada3, #d2b5aa, #dabdb2, #e5c9be,
-      #e6c9bf
-    ) content-box,
-    linear-gradient(#e5c9be, #e5c9be) padding-box,
-    radial-gradient(rgba(120, 120, 120, 0.9),
-                    rgba(120, 120, 120, 0) 70%)
-    50% bottom / 80% 0.46875em no-repeat border-box;
+  width: 100px;
+  font-size: 4em;
+  height: 80px;
+  border-radius: .5em;
+  background-image: -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0)   6%, hsla(0,0%,100%, .1) 7.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,  0%,0) 0%, hsla(0,0%,  0%,0)   4%, hsla(0,0%,  0%,.03) 4.5%),
+    -webkit-repeating-linear-gradient(left, hsla(0,0%,100%,0) 0%, hsla(0,0%,100%,0) 1.2%, hsla(0,0%,100%,.15) 2.2%),
+    
+    linear-gradient(180deg, hsl(0,0%,78%)  0%, 
+    hsl(0,0%,90%) 47%, 
+    hsl(0,0%,78%) 53%,
+    hsl(0,0%,70%)100%);
 }
+
 
 #root {
 	height: inherit;
