@@ -157,7 +157,7 @@ export default function Player({ tracks }) {
                     max={duration || 0}
                     value={currentTime}
                     onChange={handleSeek}
-                    className="w-full [--range-color:dark-grey]"
+                    className="w-full metal-range"
                 />
                 <span className="text-sm">{formatTime(duration)}</span>
             </div>
@@ -211,7 +211,7 @@ export default function Player({ tracks }) {
                     step="0.01"
                     value={volume}
                     onChange={handleVolume}
-                    className="w-full [--range-color:dark-grey]"
+                    className="w-full metal-range"
                 />
                 <span className="text-sm">{Math.round(volume * 100)}%</span>
             </div>

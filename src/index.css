@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+
+
 body {
 	height: 100vh;
   background-image: url("/wp-1.jpg");
@@ -70,3 +72,36 @@ body {
 .button4:active .button_text {
   transform: translateY(0.5px);
 }
+.metal-range {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 0.5rem; /* h-2 */
+  border-radius: 0.5rem; /* rounded-lg */
+  background: linear-gradient(to bottom, #9ca3af, #4b5563); /* bg-gradient-to-b from-gray-400 to-gray-600 */
+  cursor: pointer;
+  width: 16rem; /* w-64 */
+}
+
+.metal-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 1.5rem; /* w-6 */
+  height: 1.5rem; /* h-6 */
+  border-radius: 9999px; /* rounded-full */
+  cursor: pointer;
+  border: 1px solid #6b7280; /* border-gray-500 */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #b0b0b0 40%, #5a5a5a 80%);
+}
+
+.metal-range::-moz-range-thumb {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  border: 1px solid #6b7280;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #b0b0b0 40%, #5a5a5a 80%);
+}
+
