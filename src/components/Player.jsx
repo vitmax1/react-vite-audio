@@ -164,31 +164,41 @@ export default function Player({ tracks }) {
 
             {/* Панель управления */}
             <div className="flex space-x-3">
-                <button className="p-2" onClick={handlePrev}>
-                    <PrevIcon className="cursor-pointer" />
-                </button>
+                <div className="btn">
+                	<button className="button1" onClick={handlePrev}>
+	                    <PrevIcon className="cursor-pointer" />
+	                </button>
+                </div>
 
                 {isPlaying ? (
-                    <button className="p-2" onClick={handlePause}>
-                        <PauseIcon className="cursor-pointer" />
-                    </button>
+                    <div className="btn">
+                        <button className="button4" onClick={handlePause}>
+                            <PauseIcon className="cursor-pointer" />
+                        </button>
+                    </div>
                 ) : (
-                    <button className="p-2" onClick={handlePlay}>
-                        <PlayIcon className="cursor-pointer" />
-                    </button>
+                    <div className="btn">
+                        <button className="button4" onClick={handlePlay}>
+                            <PlayIcon className="cursor-pointer" />
+                        </button>
+                    </div>
                 )}
 
                 {/* <button className="p-2 rounded-lg" onClick={handleStop}>
                     <StopIcon className="cursor-pointer" />
                 </button> */}
 
-                <button className="p-2" onClick={handleNext}>
-                    <NextIcon className="cursor-pointer" />
-                </button>
+                <div className="btn">
+                    <button className="button1" onClick={handleNext}>
+                        <NextIcon className="cursor-pointer" />
+                    </button>
+                </div>
 
-                <button className="p-2" onClick={handleRandom}>
-                    <ShuffleIcon className="cursor-pointer" />
-                </button>
+                <div className="btn">
+                    <button className="button1" onClick={handleRandom}>
+                        <ShuffleIcon className="cursor-pointer" />
+                    </button>
+                </div>
             </div>
 
             {/* Контроль громкости */}

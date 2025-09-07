@@ -11,7 +11,7 @@ body {
 
 .metal {
 	background-image: url("/patt-1.png");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
@@ -19,4 +19,41 @@ body {
 
 #root {
 	height: inherit;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  background-color: #171717;
+  border-radius: 10px;
+}
+.button1 {
+  width: 5.7em;
+  height: 5.7em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #c7c3c0;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #ffffff 1.5px 1.5px 2px 0px inset, #c7c3c0 -3.2px -3.2px 8px 0px inset;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+.button4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 5.7em;
+  height: 5.7em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: #545251;
+  box-shadow: rgba(0, 0, 0, 0.377) 10px 10px 8px,
+    #a8a6a4 1.5px 1.5px 1px 0px inset, #545251 -3.2px -3.2px 8px 0px inset;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
 }
