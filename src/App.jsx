@@ -22,11 +22,11 @@ function App() {
 
     return (
         <div
-            className="relative min-h-screen bg-cover bg-center"
+            className="relative h-[100dvh] bg-cover bg-center"
             style={{ backgroundImage: "url('/wp-1.jpg')" }}
         >
             <div className="absolute inset-0 bg-black opacity-55"></div>
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex justify-center items-center h-[100dvh]">
                 <div className="z-999 m-0 p-2 w-screen h-[100dvh] sm:max-w-[560px] sm:min-w-[320px] sm:h-[640px] bg-white">
                     {tracks.length > 0 ? (
                         <Player tracks={tracks} />
