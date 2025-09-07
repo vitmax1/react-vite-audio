@@ -137,7 +137,7 @@ export default function Player({ tracks }) {
     };
 
     return (
-        <div className="flex flex-col items-center space-y-4 p-4 bg-gray-100 rounded-lg shadow-md w-full mx-auto">
+        <div className="flex flex-col items-center space-y-4 w-full h-full">
             <h2 className="text-lg font-bold">
                 {currentTrack?.name
                     ? `${
