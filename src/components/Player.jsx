@@ -149,7 +149,7 @@ export default function Player({ tracks }) {
             <audio ref={audioRef} onEnded={handleNext} preload="metadata" />
 
             {/* Прогресс-бар и таймер */}
-            <div className="w-full flex items-center space-x-2">
+            <div className="w-[90%] flex items-center space-x-2">
                 <span className="text-sm">{formatTime(currentTime)}</span>
                 <input
                     type="range"

@@ -60,9 +60,12 @@ body {
   cursor: pointer;
   transition: 0.1s ease-in-out;
 }
-.button4:active {
+.button1:active,.button4:active {
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
     #545251 -3.2px -3.2px 8px 0px inset;
+}
+.button1:active .button_text {
+  transform: translateY(0.5px);
 }
 .button4:active .button_text {
   transform: translateY(0.5px);
