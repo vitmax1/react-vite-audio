@@ -22,7 +22,7 @@ function App() {
 
     return (
         <div
-            className="relative h-[100dvh] bg-cover bg-center overflow-hidden"
+            className="relative h-[100dvh] bg-cover bg-center"
             style={{ backgroundImage: "url('/wp-1.jpg')" }}
         >
             <div className="absolute inset-0 bg-black opacity-55"></div>
