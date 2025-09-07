@@ -91,7 +91,7 @@ body {
   cursor: pointer;
   border: 1px solid #6b7280; /* border-gray-500 */
   box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  background: radial-gradient(circle at 30% 30%, #ffffff, #b0b0b0 40%, #5a5a5a 80%);
+  background: conic-gradient(rgb(104, 104, 104),white,rgb(104, 104, 104),white,rgb(104, 104, 104));
 }
 
 .metal-range::-moz-range-thumb {
@@ -101,6 +101,6 @@ body {
   cursor: pointer;
   border: 1px solid #6b7280;
   box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-  background: radial-gradient(circle at 30% 30%, #ffffff, #b0b0b0 40%, #5a5a5a 80%);
+  background: conic-gradient(rgb(104, 104, 104),white,rgb(104, 104, 104),white,rgb(104, 104, 104));
 }
 
