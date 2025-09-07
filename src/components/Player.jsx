@@ -138,7 +138,7 @@ export default function Player({ tracks }) {
 
     return (
         <div className="flex flex-col items-center space-y-5 w-full h-full">
-            <h2 className="text-lg font-bold">
+            <h2 className="text-lg font-bold mt-2 bg-slate-50 rounded-sm px-4 py-2">
                 {currentTrack?.name
                     ? `${
                           currentTrack.folderName || "Неизвестная папка"

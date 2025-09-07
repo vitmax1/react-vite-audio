@@ -116,7 +116,7 @@ export const Volup = (props) => (
                 <polygon
                     fill="none"
                     points="2.9 9 6.9 9 11.9 3 11.9 21 6.9 16 1.9 16 1.9 9 2.9 9"
-                    stroke="#4fa6a6ff"
+                    stroke="#111111"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
@@ -125,7 +125,7 @@ export const Volup = (props) => (
                 <path
                     d="M15.5,19.5a7.3,7.3,0,0,0,7-7.5,7.3,7.3,0,0,0-7-7.5"
                     fill="none"
-                    stroke="#4fa6a6ff"
+                    stroke="#111111"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
@@ -134,7 +134,7 @@ export const Volup = (props) => (
                 <path
                     d="M15.5,15a3,3,0,0,0,0-6"
                     fill="none"
-                    stroke="#4fa6a6ff"
+                    stroke="#111111"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
