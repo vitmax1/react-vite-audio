@@ -30,7 +30,7 @@ body {
   width: 53px;
   height: 53px;
   background-color: #2e2e2e;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 .button1 {
 	display: flex;
@@ -38,7 +38,7 @@ body {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 6px;
   border: none;
   outline: none;
   background-color: #c7c3c0;
@@ -53,7 +53,7 @@ body {
   justify-content: center;
   width: 50px;
   height: 50px;
-  border-radius: 10px;
+  border-radius: 6px;
   border: none;
   outline: none;
   background-color: #545251;
@@ -65,13 +65,9 @@ body {
 .button1:active,.button4:active {
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 0px, inset 0.5px 0.5px 4px #000000,
     #545251 -3.2px -3.2px 8px 0px inset;
+		transform: translateY(0.5px);
 }
-.button1:active .button_text {
-  transform: translateY(0.5px);
-}
-.button4:active .button_text {
-  transform: translateY(0.5px);
-}
+
 .metal-range {
   -webkit-appearance: none;
      -moz-appearance: none;
