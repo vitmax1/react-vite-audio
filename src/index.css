@@ -25,9 +25,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 54px;
-  height: 54px;
-  background-color: #171717;
+  width: 53px;
+  height: 53px;
+  background-color: #2e2e2e;
   border-radius: 10px;
 }
 .button1 {

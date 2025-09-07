@@ -137,7 +137,7 @@ export default function Player({ tracks }) {
     };
 
     return (
-        <div className="flex flex-col items-center space-y-4 w-full h-full">
+        <div className="flex flex-col items-center space-y-5 w-full h-full">
             <h2 className="text-lg font-bold">
                 {currentTrack?.name
                     ? `${
@@ -163,11 +163,11 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Панель управления */}
-            <div className="flex space-x-3">
+            <div className="flex space-x-4">
                 <div className="btn">
-                	<button className="button1" onClick={handlePrev}>
-	                    <PrevIcon className="cursor-pointer" />
-	                </button>
+                    <button className="button1" onClick={handlePrev}>
+                        <PrevIcon className="cursor-pointer" />
+                    </button>
                 </div>
 
                 {isPlaying ? (
@@ -202,7 +202,7 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Контроль громкости */}
-            <div className="w-full flex items-center space-x-2">
+            <div className="w-[90%] flex items-center space-x-2">
                 <span className="text-sm">🔊</span>
                 <input
                     type="range"
