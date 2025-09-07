@@ -10,8 +10,8 @@ body {
 }
 
 .metal {
-	background-image: url("/patt.png");
-	background-size: cover;
+	background-image: url("/patt-1.png");
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
