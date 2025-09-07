@@ -78,9 +78,8 @@ body {
           appearance: none;
   height: 0.5rem; /* h-2 */
   border-radius: 0.5rem; /* rounded-lg */
-  background: linear-gradient(to bottom, #9ca3af, #4b5563); /* bg-gradient-to-b from-gray-400 to-gray-600 */
+  background: whitesmoke;
   cursor: pointer;
-  width: 16rem; /* w-64 */
 }
 
 .metal-range::-webkit-slider-thumb {
