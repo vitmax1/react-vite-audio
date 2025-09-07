@@ -2,8 +2,8 @@ import React from "react";
 
 export const PlayIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +18,8 @@ export const PlayIcon = (props) => (
 
 export const PauseIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -38,8 +38,8 @@ export const PauseIcon = (props) => (
 
 export const NextIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +54,8 @@ export const NextIcon = (props) => (
 
 export const PrevIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -70,8 +70,8 @@ export const PrevIcon = (props) => (
 
 export const ShuffleIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +88,8 @@ export const ShuffleIcon = (props) => (
 
 export const StopIcon = (props) => (
     <svg
-        width="20px"
-        height="20px"
+        width="30px"
+        height="30px"
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
