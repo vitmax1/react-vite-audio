@@ -1,5 +1,5 @@
 import { useRef, useState, useEffect } from "react";
-import { PlayIcon, PauseIcon, NextIcon, PrevIcon, StopIcon, ShuffleIcon } from "./Icons";
+import { PlayIcon, PauseIcon, NextIcon, PrevIcon, StopIcon, ShuffleIcon, Volup } from "./Icons";
 
 export default function Player({ tracks }) {
     const audioRef = useRef(null);
@@ -203,7 +203,9 @@ export default function Player({ tracks }) {
 
             {/* Контроль громкости */}
             <div className="w-[90%] flex items-center space-x-2">
-                <span className="text-sm">🔊</span>
+                <span className="text-sm">
+                    <Volup />
+                </span>
                 <input
                     type="range"
                     min="0"

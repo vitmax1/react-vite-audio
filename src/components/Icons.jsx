@@ -101,3 +101,45 @@ export const StopIcon = (props) => (
         />
     </svg>
 );
+export const Volup = (props) => (
+    <svg
+        width="25px"
+        height="25px"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        {...props}
+    >
+        <title />
+
+        <g id="Complete">
+            <g id="volume-up">
+                <polygon
+                    fill="none"
+                    points="2.9 9 6.9 9 11.9 3 11.9 21 6.9 16 1.9 16 1.9 9 2.9 9"
+                    stroke="#4fa6a6ff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+
+                <path
+                    d="M15.5,19.5a7.3,7.3,0,0,0,7-7.5,7.3,7.3,0,0,0-7-7.5"
+                    fill="none"
+                    stroke="#4fa6a6ff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+
+                <path
+                    d="M15.5,15a3,3,0,0,0,0-6"
+                    fill="none"
+                    stroke="#4fa6a6ff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                />
+            </g>
+        </g>
+    </svg>
+);
