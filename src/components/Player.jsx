@@ -220,7 +220,7 @@ export default function Player({ tracks }) {
 
             {/* Плейлист */}
             <div className="w-full flex-1 min-h-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 hover:scrollbar-thumb-gray-700 rounded-lg">
-                <ul className="w-full bg-white rounded-lg shadow-inner divide-y divide-gray-200">
+                <ul className="w-full bg-white rounded-lg shadow-inner divide-y divide-gray-200 bg-testpink">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
