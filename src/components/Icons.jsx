@@ -2,7 +2,7 @@ import React from "react";
 
 export const PlayIcon = (props) => (
     <svg
-        fill="#000000"
+        fill="#ffffff"
         version="1.1"
         id="Layer_1"
         xmlns:x="&ns_extend;"
@@ -33,7 +33,7 @@ export const PlayIcon = (props) => (
 
 export const PauseIcon = (props) => (
     <svg
-        fill="#000000"
+        fill="#ffffff"
         version="1.1"
         id="Layer_1"
         xmlns:x="&ns_extend;"

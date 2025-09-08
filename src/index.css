@@ -1,7 +1,9 @@
 @import "tailwindcss";
 
 
-
+* {
+	box-sizing: border-box;
+}
 body {
 	height: 100vh;
   background-image: url("/wp-1.jpg");
@@ -41,7 +43,7 @@ body {
   border-radius: 6px;
   border: none;
   outline: none;
-  background-color: #c7c3c0;
+  background-color: gainsboro;
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 2px,
     #ffffff 1.5px 1.5px 2px 0px inset, #c7c3c0 -3.2px -3.2px 8px 0px inset;
   cursor: pointer;
@@ -56,7 +58,7 @@ body {
   border-radius: 6px;
   border: none;
   outline: none;
-  background-color: #545251;
+  background-color: firebrick;
   box-shadow: rgba(0, 0, 0, 0.377) 0px 0px 2px,
     #a8a6a4 1.5px 1.5px 1px 0px inset, #545251 -3.2px -3.2px 8px 0px inset;
   cursor: pointer;

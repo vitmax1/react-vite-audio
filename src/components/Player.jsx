@@ -219,8 +219,8 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Плейлист */}
-            <div className="w-full md:w-auto">
-                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200">
+            <div className="w-full">
+                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200 overflow-hidden">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
@@ -230,9 +230,9 @@ export default function Player({ tracks }) {
                             onClick={() => handleSelectTrack(index)}
                         >
                             <span
-                                className={`text-gray-500 block ${
+                                className={`block ${
                                     index === currentIndex
-                                        ? "font-semibold"
+                                        ? "font-bold"
                                         : ""
                                 }`}
                             >
