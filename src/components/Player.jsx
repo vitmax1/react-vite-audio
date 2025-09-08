@@ -220,17 +220,17 @@ export default function Player({ tracks }) {
 
             {/* Плейлист */}
             <div className="rounded-sm w-full flex-1 min-h-0 overflow-y-scroll scrollbar-thin">
-                <ul className="w-full bg-white shadow-inner divide-y divide-gray-200">
+                <ul className="w-full bg-white inset-shadow-sm/50">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
-                            className={`px-3 py-1 flex space-between gap-1 cursor-pointer hover:bg-gray-100 ${
+                            className={`px-3 py-1 flex space-between gap-2 cursor-pointer hover:bg-gray-100 ${
                                 index === currentIndex ? "bg-blue-100" : ""
                             }`}
                             onClick={() => handleSelectTrack(index)}
                         >
                             <span
-                                className={`block ${
+                                className={`whitespace-nowrap overflow-hidden text-ellipsis ${
                                     index === currentIndex ? "font-bold" : ""
                                 }`}
                             >
