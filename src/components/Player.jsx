@@ -219,8 +219,8 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Плейлист */}
-            <div className="w-full">
-                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200 overflow-hidden">
+            <div className="w-full flex-1 min-h-0 overflow-hidden rounded-lg">
+                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200 overflow-y-scroll">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
@@ -231,9 +231,7 @@ export default function Player({ tracks }) {
                         >
                             <span
                                 className={`block ${
-                                    index === currentIndex
-                                        ? "font-bold"
-                                        : ""
+                                    index === currentIndex ? "font-bold" : ""
                                 }`}
                             >
                                 {track.folderName || "Без папки"}
