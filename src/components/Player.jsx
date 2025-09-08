@@ -224,13 +224,13 @@ export default function Player({ tracks }) {
                     {tracks.map((track, index) => (
                         <li
                             key={index}
-                            className={`px-3 py-1 flex justify-between gap-2 cursor-pointer hover:bg-gray-100 ${
+                            className={`px-3 py-1 flex justify-between gap-3 cursor-pointer hover:bg-gray-100 ${
                                 index === currentIndex ? "bg-blue-100" : ""
                             }`}
                             onClick={() => handleSelectTrack(index)}
                         >
                             <span
-                                className={`flex-1 ${
+                                className={`flex-1 whitespace-nowrap ${
                                     index === currentIndex ? "font-bold" : ""
                                 }`}
                             >
