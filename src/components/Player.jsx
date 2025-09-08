@@ -138,7 +138,7 @@ export default function Player({ tracks }) {
 
     return (
         <div className="flex flex-col items-center space-y-6 w-full h-full">
-            <h2 className="text-lg font-bold mt-3 bg-slate-50 rounded-lg px-2 py-1 inset-shadow-sm/50">
+            <h2 className="text-lg font-bold bg-slate-50 rounded-lg px-2 py-1 inset-shadow-sm/50">
                 {currentTrack?.name
                     ? `${
                           currentTrack.folderName || "Неизвестная папка"
@@ -219,7 +219,7 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Плейлист */}
-            <div className="w-full flex-1 min-h-0 overflow-y-scroll rounded-lg">
+            <div className="w-full flex-1 min-h-0 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-gray-200 hover:scrollbar-thumb-gray-700 rounded-lg">
                 <ul className="w-full bg-white rounded-lg shadow-inner divide-y divide-gray-200">
                     {tracks.map((track, index) => (
                         <li
