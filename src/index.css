@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
+/* кастомные утилиты для скроллбара */
+@layer utilities {
+  /* скрыть скроллбар (но сохранить прокрутку) */
+  .scrollbar-none {
+    -ms-overflow-style: none;   /* IE/Edge */
+    scrollbar-width: none;      /* Firefox */
+  }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  /* тонкий скроллбар */
+  .scrollbar-thin {
+    scrollbar-width: thin;      /* Firefox */
+  }
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  /* трек и ползунок (WebKit) */
+  .scrollbar-track::-webkit-scrollbar-track {
+    background: #e5e7eb;        /* gray-200 */
+  }
+  .scrollbar-thumb::-webkit-scrollbar-thumb {
+    background: #6b7280;        /* gray-500 */
+    border-radius: 9999px;
+  }
+  .scrollbar-thumb:hover::-webkit-scrollbar-thumb {
+    background: #374151;        /* gray-700 */
+  }
+}
+
 * {
 	box-sizing: border-box;
 }
