@@ -230,7 +230,7 @@ export default function Player({ tracks }) {
                             onClick={() => handleSelectTrack(index)}
                         >
                             <span
-                                className={`whitespace-nowrap overflow-hidden text-ellipsis ${
+                                className={`block ${
                                     index === currentIndex ? "font-bold" : ""
                                 }`}
                             >
