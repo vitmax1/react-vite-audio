@@ -219,8 +219,8 @@ export default function Player({ tracks }) {
             </div>
 
             {/* Плейлист */}
-            <div className="w-full flex-1 min-h-0 overflow-y-scroll scrollbar-thin">
-                <ul className="w-full bg-white rounded-sm shadow-inner divide-y divide-gray-200">
+            <div className="rounded-sm w-full flex-1 min-h-0 overflow-y-scroll scrollbar-thin">
+                <ul className="w-full bg-white shadow-inner divide-y divide-gray-200">
                     {tracks.map((track, index) => (
                         <li
                             key={index}
