@@ -27,7 +27,7 @@ function App() {
         >
             <div className="absolute inset-0 bg-black opacity-55"></div>
             <div className="flex justify-center items-center h-[100dvh]">
-                <div className="z-999 m-0 p-4 w-screen h-[100dvh] sm:max-w-[560px] sm:min-w-[320px] sm:h-[640px] metal sm:rounded-lg bg-gradient-to-b from-gray-200 to-gray-400 shadow-3d">
+                <div className="z-999 m-0 p-4 w-screen h-[100dvh] sm:max-w-[560px] sm:min-w-[320px] sm:h-[640px] metal sm:rounded-sm bg-gradient-to-b from-gray-200 to-gray-400 shadow-3d">
                     {tracks.length > 0 ? (
                         <Player tracks={tracks} />
                     ) : (
