@@ -225,7 +225,7 @@ export default function Player({ tracks }) {
                         <li
                             key={index}
                             className={`px-3 py-1 flex justify-between gap-3 cursor-pointer hover:bg-gray-100 ${
-                                index === currentIndex ? "bg-blue-100" : ""
+                                index === currentIndex ? "bg-gray-200" : ""
                             }`}
                             onClick={() => handleSelectTrack(index)}
                         >
