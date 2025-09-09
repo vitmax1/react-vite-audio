@@ -29,7 +29,24 @@
   .scrollbar-thumb:hover::-webkit-scrollbar-thumb {
     background: #374151;        /* gray-700 */
   }
+	.animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    -webkit-animation: marquee 10s linear infinite;
+            animation: marquee 10s linear infinite;
+  }
+
+  @-webkit-keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
 }
+
 
 * {
 	box-sizing: border-box;
