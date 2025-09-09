@@ -138,7 +138,7 @@ export default function Player({ tracks }) {
 
     return (
         <div className="flex flex-col items-center space-y-6 w-full h-full">
-            <h2 className="w-full text-lg font-bold bg-slate-50 rounded-sm px-2 py-1 inset-shadow-sm/50">
+            <h2 className="w-full text-lg font-bold bg-slate-50 rounded-sm px-2 py-1 inset-shadow-sm/50 overflow-hidden">
                 <span className="animate-marquee">
                     {currentTrack?.name
                         ? `${
