@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
 
 /* кастомные утилиты для скроллбара */
@@ -60,9 +61,8 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
-	font-family: "Walter Turncoat", cursive;
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
 }
 
 .metal {
