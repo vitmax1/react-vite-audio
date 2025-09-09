@@ -61,7 +61,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: center center;
 	overflow: hidden;
-	font-family: "Tektur", sans-serif;
+	font-family: "Tektur, sans-serif";
   font-optical-sizing: auto;
 }
 
