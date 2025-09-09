@@ -32,8 +32,8 @@
 	.animate-marquee {
     display: inline-block;
     white-space: nowrap;
-    -webkit-animation: marquee 10s linear infinite;
-            animation: marquee 10s linear infinite;
+    -webkit-animation: marquee 30s linear infinite;
+            animation: marquee 30s linear infinite;
   }
 
   @-webkit-keyframes marquee {

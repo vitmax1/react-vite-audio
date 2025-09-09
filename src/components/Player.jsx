@@ -138,12 +138,14 @@ export default function Player({ tracks }) {
 
     return (
         <div className="flex flex-col items-center space-y-6 w-full h-full">
-            <h2 className="w-full text-lg font-bold bg-slate-50 rounded-sm px-2 py-1 inset-shadow-sm/50 animate-marquee">
-                {currentTrack?.name
-                    ? `${
-                          currentTrack.folderName || "Неизвестная папка"
-                      } - ${getFormattedName(currentTrack.name)}`
-                    : "Нет треков"}
+            <h2 className="w-full text-lg font-bold bg-slate-50 rounded-sm px-2 py-1 inset-shadow-sm/50">
+                <span className="animate-marquee">
+                    {currentTrack?.name
+                        ? `${
+                              currentTrack.folderName || "Неизвестная папка"
+                          } - ${getFormattedName(currentTrack.name)}`
+                        : "Нет треков"}
+                </span>
             </h2>
 
             <audio ref={audioRef} onEnded={handleNext} preload="metadata" />
