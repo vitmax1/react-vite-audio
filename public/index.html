@@ -1,104 +1,21 @@
-<div className="flex justify-center items-center h-[100dvh]">
-                <div className="z-999 m-0 p-2 w-screen h-[100dvh] sm:max-w-[560px] sm:min-w-[320px] sm:h-[640px] metal sm:rounded-lg">
-                   <div className="flex flex-col items-center space-y-6 w-full h-full">
-            <h2 className="text-lg font-bold mt-3 bg-slate-50 rounded-lg px-2 py-1 inset-shadow-sm/50">
-               
-            </h2>
-
-            <audio ref={audioRef} onEnded={handleNext} preload="metadata" />
-
-           
-            <div className="w-[90%] flex items-center space-x-2">
-                <span className="text-sm">{formatTime(currentTime)}</span>
-                <input
-                    type="range"
-                    min="0"
-                    max={duration || 0}
-                    value={currentTime}
-                    onChange={handleSeek}
-                    className="w-full metal-range"
-                />
-                <span className="text-sm">{formatTime(duration)}</span>
-            </div>
-
-        
-            <div className="flex space-x-4">
-                <div className="btn">
-                    <button className="button1" onClick={handlePrev}>
-                        <PrevIcon className="cursor-pointer" />
-                    </button>
-                </div>
-
-                    <div className="btn">
-                        <button className="button4" onClick={handlePause}>
-                            <PauseIcon className="cursor-pointer" />
-                        </button>
-                    </div>
-          
-                    <div className="btn">
-                        <button className="button4" onClick={handlePlay}>
-                            <PlayIcon className="cursor-pointer" />
-                        </button>
-                    </div>
-              
-
-               <button className="p-2 rounded-lg" onClick={handleStop}>
-                    <StopIcon className="cursor-pointer" />
-                </button> 
-
-                <div className="btn">
-                    <button className="button1" onClick={handleNext}>
-                        <NextIcon className="cursor-pointer" />
-                    </button>
-                </div>
-
-                <div className="btn">
-                    <button className="button1" onClick={handleRandom}>
-                        <ShuffleIcon className="cursor-pointer" />
-                    </button>
-                </div>
-            </div>
-
-          
-            <div className="w-[90%] flex items-center space-x-2">
-                <span className="text-sm">
-                    <Volup />
-                </span>
-                <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value={volume}
-                    onChange={handleVolume}
-                    className="w-full metal-range"
-                />
-                <span className="text-sm">{Math.round(volume * 100)}%</span>
-            </div>
-
-         
-            <div className="w-full">
-                <ul className="w-full mt-4 bg-white rounded-lg shadow-inner divide-y divide-gray-200 overflow-hidden">
-                 
-                        <li >
-                            <span>
-                                {track.folderName || "Без папки"}
-                            </span>{" "}
-                            <span className="truncate">
-                                {getFormattedName(track.name)}
-                            </span>
-                        </li>
-                        <li >
-                            <span>
-                                {track.folderName || "Без папки"}
-                            </span>{" "}
-                            <span className="truncate">
-                                {getFormattedName(track.name)}
-                            </span>
-                        </li>
-                    
-                </ul>
-            </div>
-        </div>
-                </div>
-            </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<style>
+		.tektur-uniquifier {
+  font-family: "Tektur", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+	</style>
+	<h2 class="tektur-uniquifier">Lorem ipsum dolor sit amet.</h2>
+</body>
+</html>
